@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+:root{
+    --primary-color: #f4f4f4;
+    --second-color: white;
+    --third-color: #555;
+    --name-color: #000;
+}
+
+.dark-theme{
+    --primary-color: #292929;
+    --second-color: #555;
+    --third-color: #fff;
+    --name-color: #fff;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+.profile-container {
+    text-align: center;
+    background: var(--second-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#icon-mode{
+    width: 30px;
+    padding: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #edeef0;
+}
+#icon-mode:hover{
+    background-color: #29292980;
+}
+.photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid var(--third-color);
+    flex: 3;
+}
+.info {
+    margin-top: 10px;
+}
+.info h2 {
+    margin: 10px 0 5px;
+    font-size: 1.5em;
+    color: var(--name-color);
+}
+.info p {
+    font-size: 1em;
+    color: var(--third-color);
+}
+.social-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--third-color);
+    font-size: 24px;
+    color: var(--third-color);
+    transition: transform 0.3s, color 0.3s;
+}
+.social-icon:hover {
+    transform: scale(1.2);
+    color: #007bff;
+    border-color: #007bff;
+}
+.description {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #444;
+}
